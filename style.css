@@ -1,0 +1,189 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+strong {
+	font-weight: bold;
+}
+
+br.clear {
+	line-height: 0;
+	font-size: 0;
+	height: 0px;
+	display: block;
+	clear: both;
+	overflow: hidden;
+}
+
+/*
+
+CSS START! YYYYYEEEEEEEEEEAAAAAAHHHHHHHH 
+
+Grid ------------------------------------------
+http://www.gridsystemgenerator.com/gs03.php?GridWidth=640&GridColumns=16&GridMarginLeft=10&GridMarginRight=10
+-----------------------------------------------
+
+*/
+html {
+	background: #fcfcfc;
+	font: 16px/1.7em "Helvetica Neue", Helvetica, Arial, sans-serif;
+	line-height: 1.5em;
+}
+a {
+	color: #a30000;
+	text-decoration: none;
+}
+body {
+	width: 620px;
+	margin: 0 auto;
+	color: #555;
+}
+h1 {
+	font-weight: bold;
+	border-bottom: 4px solid #7e0000;
+	padding-bottom: 0.625em;
+	font-size: 1.125em;
+	color: #FFF;
+	margin-bottom: 1em;
+	padding: 1.2em;
+	background-color: #a30000;
+	text-align: center;
+	padding-top: 50px;
+}
+p {
+	margin-bottom: 1.7em;
+	line-height: 1.7em;
+	text-align: ;
+}
+
+h2 {
+	display: block;
+	font-weight: bold;
+	text-align: center;
+	line-height: 1.7em;
+	padding: 1em 0;
+	border-top: 1px solid #DDD;
+}
+h2 span {
+	display: block;
+	font-weight: normal;
+	color: #888;
+	font-size: 0.875em;
+}
+
+#choose {
+	border-top: 1px solid #DDD;
+	border-bottom: 1px solid #DDD;
+}
+
+#choose a {
+	width: 104px;
+	display: block;
+	float: left;
+	border-top: 4px solid #EEE;
+	text-align: center;
+	padding: 20px 10px;
+	line-height: 1.2em;
+	font-weight: bold;
+	border-left: 1px solid #EEE;
+	margin-left: -1px;
+	height: 217px;
+}
+
+#choose a:hover, #links a:hover {
+	background-color: #FFF;
+	border-top-color: #FFF;
+}
+#choose a:hover span, #links a:hover span {
+	color: #420101;
+}
+#choose a img {
+	display: block;
+	text-align: center;
+	margin: 0 auto;
+	margin-bottom: 1em;
+}
+#choose a span {
+	display: block;
+	font-size: 0.750em;
+	line-height: 1.5em;
+	color: #555;
+	margin-top: 0.750em;
+	font-weight: normal;
+}
+
+#links {
+	clear: both;
+	border-top: 1px solid #EEE;
+	border-bottom: 1px solid #EEE;
+	margin-top: 1.7em;
+}
+#links a {
+	width: 260px;
+	display: block;
+	font-size: 1.125em;
+	line-height: 1.8em;
+	float: left;
+	padding: 10px 0;
+	padding-left: 20px;
+	padding-right: 30px;
+	font-weight: bold;
+	border-left: 1px solid #EEE;
+	margin-left: -1px;
+}
+#links a span {
+	font-size: 0.750em;
+	display: block;
+	color: #888;
+	line-height: 1.5em;
+	padding-bottom: 5px;
+	font-weight: normal;
+}
+
+#links a.first,#choose a.first {
+	border-left: none;
+}
