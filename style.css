@@ -198,6 +198,10 @@ footer {
 	color: #CCC;
 	padding: 1.5em 0;
 	text-align: center;
+	font-size: 0.9em;
+}
+footer a {
+	color: #CCC;
 }
 
 /* Overlay */
@@ -220,12 +224,13 @@ footer {
 	color: #a30000;
 	background: #FFF;
 	padding: 1em 0;
-	padding-top: 3em;
+	padding-top: 2.5em;
 	width: 560px;
 	margin: 0 auto;
 	text-align: center;
 	border-bottom: 1px solid #ccc;
 	margin-bottom: 5px;
+	font-size: 1.1em;
 }
 
 #browser p {

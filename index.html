@@ -11,16 +11,16 @@
 			}
 			
 			function showVideo() {
-					document.getElementById("player").innerHTML = "A very cool site!"
+					document.getElementById("player").innerHTML = "<iframe width=\"560\" height=\"315\" src=\"http://www.youtube.com/embed/BrXPcaRlBqo?rel=0\&autoplay=1\" frameborder=\"0\" allowfullscreen></iframe>"
 			}
 			function hideVideo() {
-					document.getElementById("player").innerHTML = "<iframe width=\"560\" height=\"315\" src=\"http://www.youtube-nocookie.com/embed/BrXPcaRlBqo?rel=0&autoplay=1\" id=\"player\" frameborder=\"0\" allowfullscreen></iframe>"
+					document.getElementById("player").innerHTML = ""
 			}
 		</script>
 	</head>
 	
 	<body>
-		<h1>You should upgrade your browser now. 		<a id="message" href="http://www.youtube.com/watch?v=BrXPcaRlBqo" target="_blank" onclick="setVisibility('browser', 'block'); showvideo();">What's a browser? &rarr;</a>
+		<h1>You should upgrade your browser now. 		<a id="message" href="http://www.youtube.com/watch?v=BrXPcaRlBqo" target="_blank" onclick="setVisibility('browser', 'block'); showVideo();">What's a browser? &rarr;</a>
 		</h1>
 		<p>Your browser has known <strong>security flaws</strong> and is <strong>missing features</strong>. This means you're very likely to encounter <strong>viruses</strong> and <strong>weird-looking websites</strong> whilst surfing the web.</p>
 		<p>Upgrading your browser will make the internet <strong>safer</strong>, <strong>faster</strong> and <strong>more beautiful</strong>. It's free and only takes a few minutes.</p>
@@ -42,7 +42,7 @@
 				Bringing together all kinds of awesomeness to make browsing better for you.
 				</span>
 			</a>
-			<a href="http://internetexplorer.com">
+			<a href="http://microsoft.com/ie">
 				<img src="img/internetexplorer.png" width="64" height="64">
 				Internet Explorer
 				<span>
@@ -69,13 +69,13 @@
 		
 		<section id="links">
 			<a href="faq.html" class="first">Confused? <span>That's understandable. Take a look at our FAQ.</span></a>
-			<a href="why.html">Get the code<span>Share the love - put this page on your own site.</span></a>
+			<a href="https://github.com/sam-m/updatetheweb">Get the code<span>Share the love - put this page on your own site.</span></a>
 			<br class="clear" />
 			
 		</section>
 		
 		<footer>
-			&copy; 2012
+			License info &bull; Created by <a href="http://samm.me" title="Sam Mularczyk's website">Sam</a>
 		</footer>
 		
 		<div id="browser">
@@ -84,7 +84,7 @@
 				
 			</h3>
 			<div id="player">
-				<iframe width="560" height="315" src="http://www.youtube-nocookie.com/embed/BrXPcaRlBqo?rel=0&autoplay=1" frameborder="0" allowfullscreen></iframe>
+			
 			</div>
 			<p> <a href="javascript:void(0)" onclick="setVisibility('browser', 'none'); hideVideo();">Click here when the video's finished</a></p>
 			
