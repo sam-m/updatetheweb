@@ -75,7 +75,7 @@ html {
 }
 a {
 	color: #a30000;
-	text-decoration: none;
+	text-decoration: underline;
 }
 body {
 	width: 620px;
@@ -126,6 +126,7 @@ h2 span {
 	border-left: 1px solid #EEE;
 	margin-left: -1px;
 	height: 198px;
+	text-decoration: none;
 }
 
 #choose a:hover, #links a:hover {
@@ -176,7 +177,8 @@ h2 span {
 	font-weight: bold;
 	border-left: 1px solid #EEE;
 	margin-left: -1px;
-		border-bottom: 4px solid transparent;
+	border-bottom: 4px solid transparent;
+	text-decoration: none;
 	
 }
 #links a span {
@@ -196,7 +198,7 @@ h2 span {
 
 footer {
 	color: #CCC;
-	padding: 1.5em 0;
+	padding: 3em 0;
 	text-align: center;
 	font-size: 0.9em;
 }
@@ -252,6 +254,7 @@ footer a {
 	font-size: 1em;
 	text-align: center;
 	color: #FFF;
+	text-decoration: none;
 }
 #browser a:hover {
 	border-bottom-color: #9d0000;
