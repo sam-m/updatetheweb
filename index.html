@@ -4,47 +4,60 @@
 	<head>
 		<title>Your browser is no longer supported.</title>
 		<link rel="stylesheet" href="style.css" type="text/css" />
+		<script type="text/javascript">
+			function setVisibility(id, visibility) {
+			document.getElementById(id).style.display = visibility;
+			return false;
+			}
+			
+			function showVideo() {
+					document.getElementById("player").innerHTML = "A very cool site!"
+			}
+			function hideVideo() {
+					document.getElementById("player").innerHTML = "<iframe width=\"560\" height=\"315\" src=\"http://www.youtube-nocookie.com/embed/BrXPcaRlBqo?rel=0&autoplay=1\" id=\"player\" frameborder=\"0\" allowfullscreen></iframe>"
+			}
+		</script>
 	</head>
 	
 	<body>
-	
-		<h1>You should upgrade your browser now.</h1>
+		<h1>You should upgrade your browser now. 		<a id="message" href="http://www.youtube.com/watch?v=BrXPcaRlBqo" target="_blank" onclick="setVisibility('browser', 'block'); showvideo();">What's a browser? &rarr;</a>
+		</h1>
 		<p>Your browser has known <strong>security flaws</strong> and is <strong>missing features</strong>. This means you're very likely to encounter <strong>viruses</strong> and <strong>weird-looking websites</strong> whilst surfing the web.</p>
 		<p>Upgrading your browser will make the internet <strong>safer</strong>, <strong>faster</strong> and <strong>more beautiful</strong>. It's free and only takes a few minutes.</p>
 		
-		<h2>Choose a browser below to get started. <span>Don't worry - they're all great.</span></h2>
+		<h2>Choose a browser below. <span>Don't worry - they're all great.</span></h2>
 		<section id="choose">
 			<a href="http://chrome.google.com" class="first">
-				<img src="http://www.veryicon.com/icon/png/Application/Chrome/Google%20Chrome.png" width="64" height="64">
+				<img src="img/chrome.png" width="64" height="64">
 				Google Chrome
 				<span>
 				Get a fast, free web browser.
 				Chrome installs in seconds and starts up immediately.
 				</span>
 			</a>
-			<a href="http://chrome.google.com">
-				<img src="http://people.mozilla.com/~faaborg/files/shiretoko/firefoxIcon/firefox-256-noshadow.png" width="64" height="64">
+			<a href="http://getfirefox.com">
+				<img src="img/firefox.png" width="64" height="64">
 				Mozilla Firefox
 				<span>
 				Bringing together all kinds of awesomeness to make browsing better for you.
 				</span>
 			</a>
-			<a href="http://chrome.google.com">
-				<img src="http://ieblog.members.winisp.net/images/ML_LogoUpdate_IE9Detail.png" width="64" height="64">
+			<a href="http://internetexplorer.com">
+				<img src="img/internetexplorer.png" width="64" height="64">
 				Internet Explorer
 				<span>
 				Unleash a more beautiful web.
 				</span>
 			</a>
-			<a href="http://chrome.google.com">
-				<img src="http://upload.wikimedia.org/wikipedia/en/6/61/Apple_Safari.png" width="64" height="64">
+			<!--<a href="http://apple.com/safari">
+				<img src="img/safari.png" width="64" height="64">
 				Apple Safari
 				<span>
 				Innovative new features improve the way you view the web.
-				</span>
+				</span>!-->
 			</a>
-			<a href="http://chrome.google.com">
-				<img src="http://noscope.com/photostream/albums/various/Real_new_Opera_icon.png" width="64" height="64">
+			<a href="http://opera.com">
+				<img src="img/opera.png" width="64" height="64">
 				Opera
 				<span>
 				Lightning fast with innovative features, you can take control of the Web like never before.
@@ -56,14 +69,26 @@
 		
 		<section id="links">
 			<a href="faq.html" class="first">Confused? <span>That's understandable. Take a look at our FAQ.</span></a>
-			<a href="why.html">Why should I upgrade?<span>Not convinced? We explain exactly why an outdated browser is bad for the web.</span></a>
+			<a href="why.html">Get the code<span>Share the love - put this page on your own site.</span></a>
 			<br class="clear" />
+			
 		</section>
 		
 		<footer>
-			About us
+			&copy; 2012
 		</footer>
-	
+		
+		<div id="browser">
+			<h3>
+				What's a browser? 
+				<a href="javascript:void(0)" onclick="setVisibility('browser', 'none'); hideVideo();">Close this video</a>
+				<p>Click on the close button when the video's finished &#11015;</p>
+			</h3>
+			<div id="player">
+				<iframe width="560" height="315" src="http://www.youtube-nocookie.com/embed/BrXPcaRlBqo?rel=0&autoplay=1" frameborder="0" allowfullscreen></iframe>
+			</div>
+		</div>
+		
 	</body>
 	
 </html>
