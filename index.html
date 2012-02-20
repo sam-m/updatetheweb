@@ -4,9 +4,19 @@
 	<head>
 		<title>Your browser is no longer supported.</title>
 		<link rel="stylesheet" href="style.css" type="text/css" />
+		<!--[if lt IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+		<style type="text/css">
+			#message {
+				margin-top: -20px;
+			}
+			
+		</style>
+		<![endif]-->
 		<script type="text/javascript">
 			function setVisibility(id, visibility) {
 			document.getElementById(id).style.display = visibility;
+			event.returnValue=false;
 			return false;
 			}
 			
@@ -22,7 +32,7 @@
 	<body>
 		<h1>You should upgrade your browser now. 		<a id="message" href="http://www.youtube.com/watch?v=BrXPcaRlBqo" target="_blank" onclick="setVisibility('browser', 'block'); showVideo();">What's a browser? &rarr;</a>
 		</h1>
-		<p>Your browser has known <strong>security flaws</strong> and is <strong>missing features</strong>. This means you're very likely to encounter <strong>viruses</strong> and <strong>weird-looking websites</strong> whilst surfing the web.</p>
+		<p>Your web browser has known <strong>security flaws</strong> and is <strong>missing features</strong>. This means you're very likely to encounter <strong>viruses</strong> and <strong>weird-looking websites</strong> whilst surfing the web.</p>
 		<p>Upgrading your browser will make the internet <strong>safer</strong>, <strong>faster</strong> and <strong>more beautiful</strong>. It's free and only takes a few minutes.</p>
 		
 		<h2>Choose a browser below. <span>Don't worry - they're all great.</span></h2>

@@ -86,11 +86,11 @@ body {
 #message {
 	text-align: center;
 	font-size: 0.8em;
-	float: right;
 	font-weight: normal;
 	text-decoration: underline;
 	padding-top: 2px;
 	color: #666;
+	float: right;
 }
 
 h2 {
@@ -275,6 +275,8 @@ h1 {
 	color: #a30000;
 	padding: 1.9em 0;
 	text-align: left;
+	width: 620px;
+	margin: 0 auto;
 }
 p {
 	margin-bottom: 2em;
